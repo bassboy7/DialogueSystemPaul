@@ -994,7 +994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000020921, y: 0.0000066757}
+  m_AnchoredPosition: {x: 0.000020921, y: 0}
   m_SizeDelta: {x: 800, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007718781
@@ -1047,8 +1047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a1ae566e1ac424482dbd26a9f667a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueBox
-  textDisplay: {fileID: 1427542069}
-  portrait: {fileID: 981728375}
 --- !u!1 &1021542959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,10 +1110,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021542959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: decf4462b040c99448612b3fd08a686c, type: 3}
+  m_Script: {fileID: 11500000, guid: b154ad7c99b556743afc18a8b68e40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
-  dialogue: {fileID: 11400000, guid: fe12511a6a76bdd4783f2294df5a1092, type: 2}
+  dialogue: {fileID: 11400000, guid: 134010d4c7331734a8e4176c329af325, type: 2}
+  dialogueBox: {fileID: 1007718783}
 --- !u!1 &1249270027
 GameObject:
   m_ObjectHideFlags: 0
