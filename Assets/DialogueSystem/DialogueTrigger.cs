@@ -10,6 +10,18 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            dialogueBox.gameObject.SetActive(true);
+            dialogue.WriteToDialogueBox(dialogueBox);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            dialogueBox.gameObject.SetActive(false);
+        }
     }
 }

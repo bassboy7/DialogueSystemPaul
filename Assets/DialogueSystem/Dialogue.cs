@@ -8,8 +8,8 @@ public class Dialogue : ScriptableObject
     [Multiline]
     private string content;
 
-    internal void Display(TMP_Text textBox)
+    internal void WriteToDialogueBox(DialogueBox dialogueBox)
     {
-        textBox.text = content;
+        dialogueBox.SetText(content);
     }
 }
